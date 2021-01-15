@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-
+import './assets/css/globals.css'
+import SwiperMoudle, { Navigation, Pagination, EffectFade, Autoplay, Controller } from 'swiper'
+SwiperMoudle.use([Navigation, Pagination, EffectFade, Autoplay, Controller])
 Vue.config.productionTip = false
 
 new Vue({
