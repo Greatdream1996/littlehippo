@@ -16,3 +16,9 @@ ul{
 a{
   text-decoration: none;
 }
+@media screen and (max-width: 750px) {
+  .w {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
