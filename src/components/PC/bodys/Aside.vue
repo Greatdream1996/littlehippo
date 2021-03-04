@@ -226,6 +226,10 @@
       <div class="claelayout">
         <calendar :weekName="['月','火','水','木','金','土','日']" :rest="[[1,3,4,5,6,7],[4,5,6,7,8,9]]" :defaultRest="[0]"></calendar>
       </div>
+      <div class="ejpreant">
+          <img src="https://image.rakuten.co.jp/littlehippo/cabinet/imgrc0074379126.jpg" alt="" @click="eject()">
+          <div v-if="ej" class="ej"><img src="https://image.rakuten.co.jp/littlehippo/cabinet/08012768/08013633/7.jpg" alt=""></div>
+      </div>
     </div>
   </div>
 </template>
@@ -235,6 +239,7 @@ import { AsideBanner, others, shose, wagyou, ragyou, yagyou, magyou, hagyou, nag
 export default {
   data () {
     return {
+      ej: false,
       AsideBanner,
       others,
       shose,
@@ -262,6 +267,9 @@ export default {
     },
     ashref (adress) {
       return 'https://item.rakuten.co.jp/littlehippo/' + adress
+    },
+    eject () {
+      this.ej = !this.ej
     }
   },
   components: {
@@ -270,6 +278,15 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.ejpreant{
+  position: relative;
+}
+.ej{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  z-index: 999;
+}
 p{
   margin: 0;
 }

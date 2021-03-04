@@ -66,7 +66,6 @@ export default {
       nextMothFirstDay: Date,
       renderDay: 0,
       nextRenderDay: 0,
-      flag: false,
       month_olympic: [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
       month_normal: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     }
@@ -109,15 +108,6 @@ export default {
       }
       for (let i = 6; i < nextarr.length; i += 7) {
         nextarr[i].setAttribute('class', 'restDay')
-      }
-      if (this.flag) {
-        for (let i = 0; i < 18; i++) {
-          arr[i].setAttribute('class', 'restDay')
-        }
-      } else {
-        for (let i = 0; i < 18; i++) {
-          nextarr[i].setAttribute('class', 'restDay')
-        }
       }
     },
     customRest: function () {

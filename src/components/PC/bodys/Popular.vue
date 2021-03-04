@@ -53,6 +53,9 @@ p{
     width: 270px;
     height: 350px;
     text-align: center;
+    img{
+      width: 100%;
+    }
     a{
       display: block;
     }

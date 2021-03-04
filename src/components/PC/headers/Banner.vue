@@ -42,6 +42,9 @@ export default {
       return 'https://image.rakuten.co.jp/littlehippo/cabinet/08012768/08013633/' + id + '.jpg'
     },
     asLink (id) {
+      if (id.length > 4) {
+        return id
+      }
       return 'https://item.rakuten.co.jp/littlehippo/c/0000000' + id
     },
     localimg (id) {

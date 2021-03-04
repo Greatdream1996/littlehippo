@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>レビューを書く</title>
+  <style>
+    .commit {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 1200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="commit">
+    <img id="red" src="https://image.rakuten.co.jp/littlehippo/cabinet/imgrc0074350078.jpg" alt="">
+    <img id="blue" src="https://image.rakuten.co.jp/littlehippo/cabinet/imgrc0074350079.jpg" alt="">
+    <div>
+      <img class="red" style="display:block" src="https://image.rakuten.co.jp/littlehippo/cabinet/1.jpg" alt="">
+      <img class="blue" style="display: none;" src="https://image.rakuten.co.jp/littlehippo/cabinet/2.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    let red = document.querySelector('#red')
+    let blue = document.querySelector('#blue')
+    let cred = document.querySelector('.red')
+    let cblue = document.querySelector('.blue')
+    red.addEventListener('click', () => {
+      cred.setAttribute('style', 'display:block')
+      cblue.setAttribute('style', 'display:none')
+    })
+    blue.addEventListener('click', () => {
+      cred.setAttribute('style', 'display:none')
+      cblue.setAttribute('style', 'display:block')
+    })
+  </script>
+</body>
+
+</html>

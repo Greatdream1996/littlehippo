@@ -1,3 +1,9 @@
+/*
+ 侧边栏数据都在这里
+ name：对应着导航栏显示的名字
+ list 是每个导航栏下面的各个选项 alink属性对应相应的类别地址后三位，
+ 修改和删除只需要修改name和alink两个值
+ */
 const agyou = {
   name: 'あ行',
   show: false,
@@ -153,6 +159,15 @@ const others = {
   show: false,
   list: []
 }
+const englishnum = {
+  name: '英数字',
+  show: false,
+  list: []
+}
+/*
+AsideBanner 控制着左侧导航栏轮播图的数据 修改或操作只需要将图片传到图片空间对应的地方，将商品编号填写在这就行，注意：商品编号和图片名称需要一致
+keyword 控制着商品详情页左侧导航栏搜索栏下面的标签 word是需要展示的标签名称  link是标签转到的链接
+*/
 const AsideBanner = ['ld4630set', 'hs2136', 'hs2134', '10000508', '10000382', '10000302', '10000281', '10000277']
 const keyword = [{
   word: 'ツイステッドワンダーランド',
@@ -177,11 +192,10 @@ const keyword = [{
 {
   word: 'ラブライブ！',
   link: 'https://item.rakuten.co.jp/littlehippo/c/0000000216/'
+},
+{
+  word: '原神',
+  link: 'https://item.rakuten.co.jp/littlehippo/c/0000000290/'
 }
 ]
-const englishnum = {
-  name: '英数字',
-  show: false,
-  list: []
-}
 export { AsideBanner, others, shose, wagyou, ragyou, yagyou, magyou, hagyou, nagyou, tagyou, sagyou, kagyou, agyou, keyword, yagyous, englishnum }

@@ -1,3 +1,4 @@
+
 <template>
   <div class="mbody">
     <div class="titlebar"><img src="~assets/img/body/オススメ新着情報.png" alt=""></div>
